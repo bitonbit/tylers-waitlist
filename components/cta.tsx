@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import TextBlur from "@/components/ui/text-blur";
 import AnimatedShinyText from "@/components/ui/shimmer-text";
 import { containerVariants, itemVariants } from "@/lib/animation-variants";
+import tylerImages from "@/constants/TylerImages"
 
 export default function CTA() {
   return (
@@ -21,7 +22,7 @@ export default function CTA() {
       </motion.div>
 
       <motion.img
-        src="/logo.svg"
+        src={tylerImages.tylersLogo}
         alt="logo"
         className="mx-auto h-24 w-24"
         variants={itemVariants}
